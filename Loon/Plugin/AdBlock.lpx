@@ -1,5 +1,5 @@
 #!name = 自用APP广告净化
-#!desc = 以下APP广告净化-海康云商,掌上生活,建行生活,得力e+,NB助手,中国移动云盘
+#!desc = 以下APP广告净化-掌上生活,建行生活,得力e+,NB助手,中国移动云盘
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
 
 [Rule]
@@ -25,9 +25,6 @@ DOMAIN-SUFFIX,adkwai.com,REJECT
 
 
 [Rewrite]
-# 海康云商开屏
-^https:\/\/file\.hikmall\.com\/prod\/image\/cab297e371944c90bbf5069cde1fb264\.jpeg$ reject
-
 
 # 掌上生活开屏广告,主机名mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com
 ^https?:\/\/mbasecc\.(bas|bcs)\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec reject-dict
@@ -52,7 +49,7 @@ http-response ^https?:\/\/v2-app\.delicloud\.com\/api\/v3\.0\/disposal\/banner\/
 http-response ^https?:\/\/yunbusiness\.ccb\.com\/(?>basic_service|clp_service)\/txCtrl\?txcode=A3341A009 script-path=https://raw.githubusercontent.com/Review977/2333/main/Loon/Script/ccblifekp.js, requires-body=true, tag=建行生活去广告
 
 [MITM]
-hostname = file.hikmall.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, v2-app.delicloud.com, yunbusiness.ccb.com, mcmm.caiyun.feixin.10086.cn, mrp.mcloud.139.com, ad.mcloud.139.com, middle.yun.139.com
+hostname = mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, v2-app.delicloud.com, yunbusiness.ccb.com, mcmm.caiyun.feixin.10086.cn, mrp.mcloud.139.com, ad.mcloud.139.com, middle.yun.139.com
 
 
 
