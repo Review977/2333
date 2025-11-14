@@ -34,7 +34,7 @@ DOMAIN-SUFFIX,byteorge.com,REJECT
 DOMAIN-SUFFIX,bytegoofy.com,REJECT
 DOMAIN-SUFFIX,bytedance.com,REJECT
 
-# 番茄视频广告页的sdk agent都是ttplayer
+# 番茄视频广告页的sdk agent都是ttplayer    影响抖音直播
 #USER-AGENT,ttplayer*,REJECT
 
 IP-CIDR,49.71.37.101/32,REJECT,no-resolve
