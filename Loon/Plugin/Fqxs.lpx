@@ -35,7 +35,7 @@ DOMAIN-SUFFIX,bytegoofy.com,REJECT
 DOMAIN-SUFFIX,bytedance.com,REJECT
 
 # 番茄视频广告页的sdk agent都是ttplayer
-USER-AGENT,ttplayer*,REJECT
+#USER-AGENT,ttplayer*,REJECT
 
 IP-CIDR,49.71.37.101/32,REJECT,no-resolve
 IP-CIDR,117.71.105.23/32,REJECT,no-resolve
