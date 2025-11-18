@@ -12,6 +12,8 @@ IP-CIDR,74.48.15.109/32,DIRECT
 DOMAIN-SUFFIX,yun.139.com,全球加速
 DOMAIN-SUFFIX,migu.cn,全球加速
 
+URL-REGEX,^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/.*?\/v\d\/(version|notice\?|top_notice\?|advert\?position=[^2]+),REJECT-DROP
+
 
 
 # NB助手去开屏
