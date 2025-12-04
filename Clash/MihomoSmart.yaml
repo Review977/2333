@@ -115,7 +115,7 @@ proxy-groups:
 
 
   - {name: 全球加速, type: select, proxies: [香港智能, 日本智能, 狮城智能, 香港, 日本, 狮城, 美国, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
-  - {name: Telegram, type: select, proxies: [狮城智能, 香港智能, 狮城, 香港, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
+  - {name: Telegram, type: select, proxies: [香港智能, 狮城智能, 日本智能, 香港, 狮城, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
   - {name: 智能助理,   type: select, proxies: [美国, 日本, 狮城, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
   
   - {name: YouTube, type: select, proxies: [香港, 日本, 美国, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
