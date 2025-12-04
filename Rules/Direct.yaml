@@ -1,7 +1,5 @@
 payload:
 
- - DOMAIN-SUFFIX,pppad.xyz
  - DOMAIN-SUFFIX,linux.do
  - IP-CIDR,45.12.53.63/32
- - IP-CIDR,151.241.88.112/32
  - IP-CIDR,74.48.15.109/32
