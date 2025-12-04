@@ -86,7 +86,6 @@ dns:
     - +.docker.io
     - +.market.xiaomi.com
     - +.push.apple.com
-    - +.pppad.xyz
 
     
 # 节点筛选
@@ -173,7 +172,7 @@ rule-providers:
   Emby:         {<<: *RuleSet_classical, url: 'https://raw.githubusercontent.com/Review977/2333/main/Rules/Emby.yaml'}
   Telegram:     {<<: *RuleSet_classical, url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml'}
   YouTube:      {<<: *RuleSet_classical, url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml'}
-  OpenAi:       {<<: *RuleSet_classical, url: 'https://gist.githubusercontent.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4/raw/Ai.yaml'}
+  OpenAi:       {<<: *RuleSet_classical, url: 'https://kelee.one/Tool/Clash/Rule/AI.yaml'}
   Google:       {<<: *RuleSet_classical, url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml'}
   Github:       {<<: *RuleSet_classical, url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml'}
   SpeedTest:    {<<: *RuleSet_classical, url: 'https://kelee.one/Tool/Clash/Rule/SpeedtestChina.yaml'}
