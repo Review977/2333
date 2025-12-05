@@ -1,14 +1,16 @@
-#!name=高德地图净化[墨鱼版]
+#!name=高德地图净化
 #!desc=去除高德地图广告，来自@ddgksf2013
 #!author=ddgksf2013
-#!update=2025-08-30
-#!version=1.0.25
+#!update=2025-12-5
+#!version=1.0.26
 #!tag = 去广告
 #!loon_version = 3.3.2(877)
 #!icon = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App-Icon/Amap.png
 [Rule]
 DOMAIN-SUFFIX, optimus-ads.amap.com, DIRECT
 [Rewrite]
+# > 高德地图_首页底部信息流
+^https?:\/\/.*\.amap\.com\/v\d\/ai_rec\/home_qs url reject-dict
 # 高德地图_路线规划下方广告
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? reject-dict
 # 高德地图_Tip请求
@@ -48,4 +50,4 @@ http-response ^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword script-
 # 高德地图_打车页右上角分享地址
 http-response ^https:\/\/m5-zb\.amap\.com\/ws\/boss\/car\/order\/content_info script-path = https://raw.githubusercontent.com/Review977/2333/main/Loon/Script/amap_remove_toolMapBar.js, requires-body = true, tag = [高德地图]移除右上角分享地址图标
 [MITM]
-hostname = m5.amap.com, m5-zb.amap.com, center.amap.com, amap-aos-info-nogw.amap.com
+hostname = m5.amap.com, m5-zb.amap.com, center.amap.com, amap-aos-info-nogw.amap.com, ai.amap.com
