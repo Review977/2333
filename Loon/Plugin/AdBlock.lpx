@@ -3,9 +3,7 @@
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
 
 [Rule]
-
-DOMAIN-SUFFIX,pppad.xyz,DIRECT
-DOMAIN-SUFFIX,linux.do,DIRECT
+DOMAIN-SUFFIX,009997.xyz,DIRECT
 IP-CIDR,45.12.53.63/32,DIRECT
 IP-CIDR,151.241.88.112/32,DIRECT
 IP-CIDR,74.48.15.109/32,DIRECT
