@@ -48,7 +48,6 @@ sniffer:
   skip-domain:
     - "Mijia Cloud"
     - "+.push.apple.com"
-    - "+.pppad.xyz"
 
 
 tun:
