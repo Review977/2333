@@ -10,7 +10,7 @@
 DOMAIN-SUFFIX, optimus-ads.amap.com, DIRECT
 [Rewrite]
 # > 高德地图_首页底部信息流
-^https?:\/\/.*\.amap\.com\/v\d\/ai_rec\/home_qs url reject-dict
+^https?:\/\/.*\.amap\.com\/v\d\/ai_rec\/ url reject-dict
 # 高德地图_路线规划下方广告
 ^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? reject-dict
 # 高德地图_Tip请求
