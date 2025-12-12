@@ -111,12 +111,11 @@ proxy-groups:
 
 
   - {name: 全球加速, type: select, proxies: [香港, 日本, 狮城, 美国, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
-  - {name: Telegram, type: select, proxies: [狮城, 香港, 媒体, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
-  - {name: 智能助理,   type: select, proxies: [自建, 美国, 日本, 狮城, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
-  
-  - {name: YouTube, type: select, proxies: [香港, 日本, 美国, 媒体, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
-  - {name: 谷歌服务, type: select, proxies: [自建, 美国, 日本, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
-  - {name: Emby,   type: select, proxies: [DIRECT, 媒体, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
+  - {name: Telegram, type: select, proxies: [香港, 狮城, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
+  - {name: 智能助理,   type: select, proxies: [美国, 日本, 狮城, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
+  - {name: YouTube, type: select, proxies: [香港, 日本, 美国, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
+  - {name: 谷歌服务, type: select, proxies: [美国, 日本, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
+  - {name: Emby,   type: select, proxies: [DIRECT, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   
   #- {name: 微软服务, type: select, proxies: [DIRECT, 香港, 日本, 狮城, 美国, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png }
   #- {name: 苹果服务, type: select, proxies: [DIRECT, 香港, 日本, 狮城, 美国, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png }
@@ -129,10 +128,11 @@ proxy-groups:
   - {name: 日本, <<: *Select, filter: *FilterJP , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png}
   - {name: 狮城, <<: *Select, filter: *FilterSG , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png}
   - {name: 美国, <<: *Select, filter: *FilterUS , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png}
-  
 
   - {name: 自建, <<: *Select, filter: *FilterZJ, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png}
-  - {name: 媒体, <<: *Select, filter: *FilterDB, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png}
+  
+  # 全部节点
+  - {name: Proxy, <<: *Select, filter: *FilterAll, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png}
   
 
 
@@ -143,8 +143,6 @@ proxy-groups:
   #- {name: 狮城自动, <<: *Auto, filter: *FilterSG , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png}
 
   
-  # 全部节点
-  - {name: Proxy, <<: *Select, filter: *FilterAll, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png}
 
 
 rule-anchor:
