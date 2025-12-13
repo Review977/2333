@@ -23,10 +23,10 @@ geo-auto-update: true
 geo-update-interval: 24
 # 自定 GEO 下载地址
 geox-url:
-  geosite: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
-  mmdb: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb
-  geoip: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
-  asn: https://gh-proxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+  geosite: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb
+  geoip: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat
+  asn: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
   
   
 profile:
@@ -118,7 +118,6 @@ proxy-groups:
   - {name: 全球加速, type: select, proxies: [香港智能, 日本智能, 狮城智能, 香港, 日本, 狮城, 美国, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
   - {name: Telegram, type: select, proxies: [香港智能, 狮城智能, 日本智能, 香港, 狮城, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png }
   - {name: 智能助理,   type: select, proxies: [美国, 日本, 狮城, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
-  
   - {name: YouTube, type: select, proxies: [香港, 日本, 美国, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png }
   - {name: 谷歌服务, type: select, proxies: [美国, 日本, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
   - {name: Emby,   type: select, proxies: [DIRECT, 自建, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
@@ -127,24 +126,15 @@ proxy-groups:
   #- {name: 苹果服务, type: select, proxies: [DIRECT, 香港, 日本, 狮城, 美国, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png }
   #- {name: 游戏平台, type: select, proxies: [DIRECT, 香港, 日本, 狮城, 美国, Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png }
   
- 
-
   # 手动选择
   - {name: 香港, <<: *Select, filter: *FilterHK , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
   - {name: 日本, <<: *Select, filter: *FilterJP , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png}
   - {name: 狮城, <<: *Select, filter: *FilterSG , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png}
   - {name: 美国, <<: *Select, filter: *FilterUS , icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png}
-  
-
   - {name: 自建, <<: *Select, filter: *FilterZJ, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png}
-  
-
-
   - {name: 香港智能,  <<: *Smart, filter: *FilterHKZD, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Hong_Kong.png}
   - {name: 狮城智能,  <<: *Smart, filter: *FilterSGZD, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Singapore.png}
   - {name: 日本智能,  <<: *Smart, filter: *FilterJPZD, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Japan.png}
-  
-
   
   # 全部节点
   - {name: Proxy, <<: *Select, filter: *FilterAll, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png}
